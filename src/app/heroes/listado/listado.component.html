@@ -1,0 +1,13 @@
+
+<div *ngIf="tecnicoBorrado; else noBorrado">
+    <h3>Héroe Borrado: <small>{{ tecnicoBorrado }}</small></h3>   
+</div>
+
+<ng-template #noBorrado>
+    <h3>A la ducha</h3>   
+</ng-template>
+
+<ul class="list-group">
+    <li *ngFor="let heroe of heroes; let i= index" class="list-group-item">{{ i }} - {{heroe}}</li>
+</ul>
+<button (click)="borrarTecnico()" class="button" class="btn btn-warning">Borrar</button>
