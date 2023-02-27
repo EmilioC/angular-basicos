@@ -1,0 +1,5 @@
+<ul class="list-group list-group-flush">
+    <li *ngFor="let personaje of personajes" 
+    aria-current="true" class="list-group-item">
+    {{ personaje.nombre }} - {{ personaje.poder | number}}</li>
+  </ul> 
