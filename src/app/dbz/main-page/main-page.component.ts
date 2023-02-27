@@ -19,9 +19,14 @@ export class MainPageComponent {
   ]
 
   nuevo: Personaje = {
-    nombre: '',
-    poder: 0
+    nombre: 'Nuevo Personaje',
+    poder: 5000
   }
+
+  agregarNuevoPersonaje( argumento : Personaje ){
+    this.personajes.push( argumento )
+  }
+/*
 
 agregar( ){
   if (this.nuevo.nombre.trim().length === 0){ return; }
@@ -33,5 +38,5 @@ agregar( ){
     nombre: '',
     poder: 0
     }
-  }
+  } */
 }
