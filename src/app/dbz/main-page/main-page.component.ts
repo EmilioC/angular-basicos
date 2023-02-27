@@ -13,17 +13,29 @@ interface Personaje {
 })
 export class MainPageComponent {
 
+  personajes: Personaje [] = [
+    {
+      nombre: 'Goku',
+      poder: 15000 
+    },
+    {  nombre: 'Vegeta',
+      poder: 7500}
+  ]
+
   nuevo: Personaje = {
-    nombre: 'Trucks',
-    poder: 252
+    nombre: '',
+    poder: 0
   }
 
 agregar( ){
-  console.log(this.nuevo)
-}
+  if (this.nuevo.nombre.trim().length === 0){ return; }
 
-cambiarNombre( event: any){
-  console.log( event.target.value)
-}
+  console.log( this.nuevo )
 
+  this.personajes.push (this.nuevo)
+  this.nuevo = {
+    nombre: '',
+    poder: 0
+    }
+  }
 }
