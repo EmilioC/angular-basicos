@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { MainPageComponent } from './main-page/main-page.component';
-import { PesonajesComponent } from './pesonajes/pesonajes.component';
+import { PersonajesComponent } from './pesonajes/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
 import { DbzService } from './services/dbz.services';
 
@@ -11,7 +11,7 @@ import { DbzService } from './services/dbz.services';
 @NgModule({
   declarations: [
     MainPageComponent,
-    PesonajesComponent,
+    PersonajesComponent,
     AgregarComponent
   ],
   imports: [

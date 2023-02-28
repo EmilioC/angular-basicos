@@ -2,8 +2,7 @@
   <div class="container text-center p-2">
     
      <div class="col-6">
-        <app-agregar [nuevo]="nuevo"
-        (onNuevopersonaje)="agregarNuevoPersonaje( $event)"> </app-agregar>
+        <app-agregar [nuevo]="nuevo"> </app-agregar>
 <!--          <form (ngSubmit)="agregar()">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nombre</label>
@@ -28,7 +27,7 @@
           </form>
       </div>
       <div class="col"> -->
-        <app-pesonajes [personajes]="personajes"></app-pesonajes>
+        <app-personajes></app-personajes>
 <!--         <ul class="list-group list-group-flush">
             <li *ngFor="let personaje of personajes" 
             aria-current="true" class="list-group-item">
